@@ -275,10 +275,13 @@ class _SignupPage extends State<SignupPage> {
 
                   if (!email.contains("@") || email.length < 8) {
                     errorEmail = "Iltimos to'g'ri email kiriting";
+                    setState(() {});
                   } else if (password.length < 8) {
                     errorpassword1 = "parol kamida 8ta belgi bo'lishi kerak";
+                    setState(() {});
                   } else if (password2.length < 8) {
                     errorpassword2 = "parol kamida 8ta belgi bo'lishi kerak";
+                    setState(() {});
                   } else if (password != password2) {
                     errorpassword2 = "Iltimos parollarni bir xil kiritng";
                     errorpassword1 = "Iltimos parollarni bir xil kiritng";
